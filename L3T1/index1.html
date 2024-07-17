@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto slideshow</title>
+    
+
+    <style type="text/css">
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7aacff;
+}
+.container{
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 20px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <img src="40 Hilariously Wholesome Dog Ratings To Brighten Up Your Day (New Pics).jpeg">
+            <img src="download.jpeg">
+            <img src="Golden Retriever Laying Down In The Field Of Flowers Background, Wallpaper Dog Pictures, Dog, Dog Powerpoint Background Image And Wallpaper for Free Download.jpeg">
+            <img src="Cute Dogs Funny Videos.jpeg">
+        </div>
+    </div>
+</body>
+</html>
